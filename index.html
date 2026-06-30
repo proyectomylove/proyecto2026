@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un regalo de cumpleaños interactivo, lleno de fotos, recuerdos y amor.">
+    <title>Feliz 18 añitos mi amor</title>
+    <script type="module" crossorigin="" src="./js/index.js"></script>
+    <link rel="stylesheet" crossorigin="" href="./css/index.css">
+  </head>
+  <body>
+    <div id="root">
+     <main class="app">
+      <div aria-hidden="true" class="heart-burst">
+      </div>
+      <nav aria-label="Navegación del regalo" class="topbar">
+       <a class="brand-mark" href="#inicio">
+        <svg class="lucide lucide-heart" fill="currentColor" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+         </path>
+        </svg>
+        Amorcito
+       </a>
+       <div class="nav-links">
+        <a href="#recuerdos">
+         Recuerdos
+        </a>
+        <a href="#galeria">
+         Fotos
+        </a>
+        <a href="#carta">
+         Carta
+        </a>
+       </div>
+      </nav>
+      <section class="hero" id="inicio">
+       <img alt="Tu cachetito bajo el sol" class="hero-photo" src="./photos/beso-sol.jpg"/>
+       <div class="hero-scrim">
+       </div>
+       <div class="hero-copy">
+        <p class="eyebrow">
+         Una web hecha solo para ti
+        </p>
+        <h1>
+         Feliz 18 añitos mi amor
+        </h1>
+        <p class="hero-text">
+         Mañana celebramos tus 18, pero yo quería regalarte algo que se pueda abrir más de una vez: una casita llena de nuestras fotos, nuestras risas y todo lo que siento por ti.
+        </p>
+        <div class="hero-actions">
+         <button class="primary-action" type="button">
+          <svg class="lucide lucide-gift" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+           <rect height="4" rx="1" width="18" x="3" y="8">
+           </rect>
+           <path d="M12 8v13">
+           </path>
+           <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7">
+           </path>
+           <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5">
+           </path>
+          </svg>
+          Abrir mi regalo
+         </button>
+         <a class="ghost-action" href="#carta">
+          <svg class="lucide lucide-mail" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="19" xmlns="http://www.w3.org/2000/svg">
+           <rect height="16" rx="2" width="20" x="2" y="4">
+           </rect>
+           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7">
+           </path>
+          </svg>
+          Leer la carta
+         </a>
+        </div>
+       </div>
+       <a aria-label="Ir a recuerdos" class="scroll-cue" href="#recuerdos">
+        <svg class="lucide lucide-arrow-down" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+         <path d="M12 5v14">
+         </path>
+         <path d="m19 12-7 7-7-7">
+         </path>
+        </svg>
+       </a>
+      </section>
+      <section class="section memories-section" id="recuerdos">
+       <div class="section-heading">
+        <p class="eyebrow">
+         Nuestros pedacitos favoritos
+        </p>
+        <h2>
+         Un álbum donde todo vuelve a sentirse cerquita
+        </h2>
+       </div>
+       <div class="memory-layout">
+        <div class="memory-photo">
+         <img alt="Sol, pastito y tú" src="./photos/sol-parque.jpg"/>
+         <span>
+          Sol, pastito y tú
+         </span>
+        </div>
+        <div class="memory-panel">
+         <div aria-label="Recuerdos" class="memory-tabs" role="tablist">
+          <button aria-pressed="false" class="memory-tab" type="button">
+           <svg class="lucide lucide-star" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+            </path>
+           </svg>
+           Photobooth
+          </button>
+          <button aria-pressed="false" class="memory-tab" type="button">
+           <svg class="lucide lucide-star" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+            </path>
+           </svg>
+           Río
+          </button>
+          <button aria-pressed="true" class="memory-tab active" type="button">
+           <svg class="lucide lucide-star" fill="currentColor" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+            </path>
+           </svg>
+           Solcito
+          </button>
+          <button aria-pressed="false" class="memory-tab" type="button">
+           <svg class="lucide lucide-star" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+            </path>
+           </svg>
+           Noche
+          </button>
+         </div>
+         <p>
+          Hay fotos donde se ve la luz, y fotos donde se siente. Esta me hace pensar en tu forma de acompañarme: cálida, real, bonita incluso cuando no estamos posando.
+         </p>
+         <button class="tiny-action" type="button">
+          <svg class="lucide lucide-sparkles" fill="none" height="17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="17" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+           </path>
+           <path d="M20 3v4">
+           </path>
+           <path d="M22 5h-4">
+           </path>
+           <path d="M4 17v2">
+           </path>
+           <path d="M5 18H3">
+           </path>
+          </svg>
+          Mandarle amor a este recuerdo
+         </button>
+        </div>
+       </div>
+      </section>
+      <section aria-label="Mensaje principal" class="section birthday-strip">
+       <div>
+        <p>
+         Hoy empieza otra etapa preciosa para ti.
+        </p>
+        <h2>
+         18 vueltas al sol, y yo sintiéndome afortunado de estar aquí contigo.
+        </h2>
+       </div>
+       <button aria-label="Lanzar corazones" class="round-button" type="button">
+        <svg class="lucide lucide-heart" fill="currentColor" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg">
+         <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+         </path>
+        </svg>
+       </button>
+      </section>
+      <section class="section gallery-section" id="galeria">
+       <div class="section-heading">
+        <p class="eyebrow">
+         Todas estas versiones de nosotros
+        </p>
+        <h2>
+         Fotos que guardan cómo se siente amarte
+        </h2>
+       </div>
+       <div class="spotlight">
+        <button aria-label="Foto anterior" class="carousel-button" type="button">
+         <svg class="lucide lucide-chevron-left" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="m15 18-6-6 6-6">
+          </path>
+         </svg>
+        </button>
+        <button aria-label="Abrir Ese abrazo en el río" class="spotlight-photo" type="button">
+         <img alt="Ese abrazo en el río" src="./photos/rio-abrazo.jpg"/>
+         <span>
+          Un lugar gigante, el sol encima, el agua fría y aun así mi parte favorita eras tú pegadita a mí.
+         </span>
+        </button>
+        <button aria-label="Foto siguiente" class="carousel-button" type="button">
+         <svg class="lucide lucide-chevron-right" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="m9 18 6-6-6-6">
+          </path>
+         </svg>
+        </button>
+       </div>
+       <div class="photo-grid">
+        <button class="photo-card tall" type="button">
+         <img alt="La foto que parece una película" src="./photos/photobooth-estrellitas.jpg"/>
+         <span>
+          La foto que parece una película
+         </span>
+        </button>
+        <button class="photo-card tall" type="button">
+         <img alt="Ese abrazo en el río" src="/photos/rio-abrazo.jpg"/>
+         <span>
+          Ese abrazo en el río
+         </span>
+        </button>
+        <button class="photo-card wide" type="button">
+         <img alt="Nosotros en modo día bonito" src="/photos/selfie-plaza.jpg"/>
+         <span>
+          Nosotros en modo día bonito
+         </span>
+        </button>
+        <button class="photo-card tall" type="button">
+         <img alt="Nuestros lentes, nuestra seriedad falsa" src="./photos/noche-lentes.jpg"/>
+         <span>
+          Nuestros lentes, nuestra seriedad falsa
+         </span>
+        </button>
+        <button class="photo-card tall" type="button">
+         <img alt="Sol, pastito y tú" src="./photos/sol-parque.jpg"/>
+         <span>
+          Sol, pastito y tú
+         </span>
+        </button>
+        <button class="photo-card tall" type="button">
+         <img alt="Un besito que lo dice todo" src="./photos/beso-noche.jpg"/>
+         <span>
+          Un besito que lo dice todo
+         </span>
+        </button>
+        <button class="photo-card wide" type="button">
+         <img alt="Cuando te miro y se me nota" src="./photos/selfie-arboles.jpg"/>
+         <span>
+          Cuando te miro y se me nota
+         </span>
+        </button>
+        <button class="photo-card tall" type="button">
+         <img alt="Cerquita del cielo" src="./photos/cerca-cielo.jpg"/>
+         <span>
+          Cerquita del cielo
+         </span>
+        </button>
+        <button class="photo-card tall" type="button">
+         <img alt="Tu cachetito bajo el sol" src="./photos/beso-sol.jpg"/>
+         <span>
+          Tu cachetito bajo el sol
+         </span>
+        </button>
+       </div>
+      </section>
+      <section class="section reasons-section">
+       <div class="section-heading">
+        <p class="eyebrow">
+         18 razones chiquititas
+        </p>
+        <h2>
+         Una por cada añito hermoso que cumples
+        </h2>
+       </div>
+       <div aria-live="polite" class="reason-progress">
+        <span>
+         8/18 abiertas
+        </span>
+        <div class="progress-track">
+         <div style="width: 44.4444%;">
+         </div>
+        </div>
+       </div>
+       <div class="reasons-grid">
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          01
+         </span>
+         <span>
+          Porque eres mi lugar tranquilo.
+         </span>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          02
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          03
+         </span>
+         <span>
+          Porque contigo todo se siente más casa.
+         </span>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          04
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          05
+         </span>
+         <span>
+          Porque eres hermosa incluso cuando dices que no.
+         </span>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          06
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          07
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          08
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          09
+         </span>
+         <span>
+          Porque me miras y se me olvida el ruido.
+         </span>
+        </button>
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          10
+         </span>
+         <span>
+          Porque contigo lo simple se vuelve especial.
+         </span>
+        </button>
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          11
+         </span>
+         <span>
+          Porque tu cariño me cuida.
+         </span>
+        </button>
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          12
+         </span>
+         <span>
+          Porque amo nuestras fotos raritas.
+         </span>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          13
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          14
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          15
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          16
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card" type="button">
+         <span class="reason-number">
+          17
+         </span>
+         <svg class="lucide lucide-heart" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+        </button>
+        <button class="reason-card open" type="button">
+         <span class="reason-number">
+          18
+         </span>
+         <span>
+          Porque hoy cumples 18 y yo solo quiero amarte más.
+         </span>
+        </button>
+       </div>
+      </section>
+      <section class="section letter-section" id="carta">
+       <div class="letter-shell">
+        <div class="letter-copy">
+         <p class="eyebrow">
+          Mi declaración de amor
+         </p>
+         <h2>
+          Para la persona que hace más bonito mi mundo
+         </h2>
+         <p>
+          Mi amor, hoy quiero que sepas que no te amo solo por los momentos felices, por las fotos lindas o por los días fáciles. Te amo por tu forma de existir, por tu ternura, por tus silencios, por tus caras, por cómo te haces espacio en mi vida sin forzar nada.
+         </p>
+         <p>
+          Gracias por dejarme acompañarte. Gracias por hacerme sentir que el amor puede ser suave, divertido, intenso y simple a la vez. Si pudiera regalarte una cosa para tus 18, sería la certeza de que eres amada con una fuerza enorme, sincera y completamente tuya.
+         </p>
+        </div>
+        <div class="envelope">
+         <button aria-label="Abrir carta" class="envelope-front" type="button">
+          <svg class="lucide lucide-mail" fill="none" height="34" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg">
+           <rect height="16" rx="2" width="20" x="2" y="4">
+           </rect>
+           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7">
+           </path>
+          </svg>
+          <span>
+           Ábreme
+          </span>
+         </button>
+         <div class="paper-letter">
+          <p>
+           Feliz cumpleaños, mi vida. Ojalá este nuevo año te trate con la misma dulzura con la que yo quiero tratarte siempre. Que cumplas sueños, que te rías mucho, que te sientas orgullosa de ti y que nunca olvides que aquí estoy, enamorado de ti, celebrándote.
+          </p>
+          <strong>
+           Te amo demasiado.
+          </strong>
+         </div>
+        </div>
+       </div>
+      </section>
+      <section class="section vows-section">
+       <div class="section-heading">
+        <p class="eyebrow">
+         Lo que quiero prometerte
+        </p>
+        <h2>
+         Cuatro cositas que me nacen del corazón
+        </h2>
+       </div>
+       <div class="vows-grid">
+        <article class="vow-card">
+         <span>
+          1
+         </span>
+         <p>
+          Prometo recordarte lo preciosa que eres, incluso en los días en que tú no lo veas.
+         </p>
+        </article>
+        <article class="vow-card">
+         <span>
+          2
+         </span>
+         <p>
+          Prometo elegirte con paciencia, ternura y ganas de construir algo bonito.
+         </p>
+        </article>
+        <article class="vow-card">
+         <span>
+          3
+         </span>
+         <p>
+          Prometo hacer espacio para nuestras risas, nuestros planes y nuestros silencios.
+         </p>
+        </article>
+        <article class="vow-card">
+         <span>
+          4
+         </span>
+         <p>
+          Prometo cuidarte como se cuida algo que no se quiere perder nunca.
+         </p>
+        </article>
+       </div>
+      </section>
+      <section class="finale">
+       <img alt="Tira de fotos juntos" src="./photos/photobooth-estrellitas.jpg"/>
+       <div class="finale-copy">
+        <p>
+         Para mañana, para hoy y para todos los días que vengan:
+        </p>
+        <h2>
+         Feliz 18 añitos mi amor
+        </h2>
+        <button class="primary-action" type="button">
+         <svg class="lucide lucide-heart" fill="currentColor" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+         </svg>
+         Te amo
+        </button>
+       </div>
+      </section>
+     </main>
+    </div>
+
+   </body>
+   
+
+</html>
